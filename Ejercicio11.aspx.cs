@@ -18,21 +18,21 @@ namespace Proyecto1
             {
                 double cuotaInicial, resto;
 
-                if (ingresos < 800000)
+                if (ingresos <= 8000)
                 {
                     cuotaInicial = costoCasa * 0.15;
                     resto = costoCasa - cuotaInicial;
-                    LblResultado.Text = "Ingresos menores a $800,000 (Aplica 15% cuota inicial y 10 años de plazo).<br />" +
-                                        "Cuota inicial: $" + cuotaInicial.ToString("F2", CultureInfo.InvariantCulture) + "<br />" +
-                                        "Resto a financiar: $" + resto.ToString("F2", CultureInfo.InvariantCulture);
+                    LblResultado.Text = "Ingresos menores a $8000 (se aplica 15% cuota inicial y 10 años de plazo).<br />" +
+                                        "Cuota inicial: $" + cuotaInicial.ToString( CultureInfo.InvariantCulture) + "<br />" +
+                                        "Resto a financiar: $" + resto.ToString( CultureInfo.InvariantCulture);
                 }
                 else
                 {
                     cuotaInicial = costoCasa * 0.30;
                     resto = costoCasa - cuotaInicial;
-                    LblResultado.Text = "Ingresos de $800,000 o más (Aplica 30% cuota inicial y 7 años de plazo).<br />" +
-                                        "Cuota inicial: $" + cuotaInicial.ToString("F2", CultureInfo.InvariantCulture) + "<br />" +
-                                        "Resto a financiar: $" + resto.ToString("F2", CultureInfo.InvariantCulture);
+                    LblResultado.Text = "Ingresos de $8000 o más (se aplica 30% cuota inicial y 7 años de plazo).<br />" +
+                                        "Cuota inicial: $" + cuotaInicial.ToString( CultureInfo.InvariantCulture) + "<br />" +
+                                        "Resto a financiar: $" + resto.ToString( CultureInfo.InvariantCulture);
                 }
             }
             else

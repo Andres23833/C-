@@ -65,6 +65,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ciclos2.aspx" />
+    <Content Include="ciclos3.aspx" />
+    <Content Include="ciclos4.aspx" />
+    <Content Include="ciclos5.aspx" />
     <Content Include="Ejercicio1.aspx" />
     <Content Include="Ejercicio10.aspx" />
     <Content Include="Ejercicio11.aspx" />
@@ -77,9 +81,38 @@
     <Content Include="Ejercicio7.aspx" />
     <Content Include="Ejercicio8.aspx" />
     <Content Include="Ejercicio9.aspx" />
+    <Content Include="Examen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ciclos2.aspx.cs">
+      <DependentUpon>ciclos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ciclos2.aspx.designer.cs">
+      <DependentUpon>ciclos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ciclos3.aspx.cs">
+      <DependentUpon>ciclos3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ciclos3.aspx.designer.cs">
+      <DependentUpon>ciclos3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ciclos4.aspx.cs">
+      <DependentUpon>ciclos4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ciclos4.aspx.designer.cs">
+      <DependentUpon>ciclos4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ciclos5.aspx.cs">
+      <DependentUpon>ciclos5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ciclos5.aspx.designer.cs">
+      <DependentUpon>ciclos5.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ejercicio1.aspx.cs">
       <DependentUpon>Ejercicio1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -163,6 +196,13 @@
     </Compile>
     <Compile Include="Ejercicio9.aspx.designer.cs">
       <DependentUpon>Ejercicio9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examen.aspx.cs">
+      <DependentUpon>Examen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examen.aspx.designer.cs">
+      <DependentUpon>Examen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
